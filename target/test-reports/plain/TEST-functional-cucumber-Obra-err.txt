@@ -1,0 +1,17 @@
+
+--Output from Adicionar obra nao existente--
+--Output from Buscar percentual de obras atrasadas--
+--Output from Buscar percentual de obras com orcamento estourado--
+--Output from Adicionar obra existente--
+--Output from Atualizar obra--
+--Output from Remover obra existente--
+--Output from Verificar status andamento obra--
+--Output from Adicionar obra com data de termino anterior a data de início--
+--Output from Adicionar obra com data de termino anterior a data corrente--
+--Output from Atualizar nome de obra com nome já existente--
+--Output from Adicionar obra de um politico inexistente--
+--Output from Devolver a taxa de obras atrasadas de um determinado político--
+--Output from Devolver a taxa de obras com orçamentos estourados de um determinado político--
+--Output from Receber atualizacoes da obra por email--
+--Output from Visualizar obra--
+--Output from Nova pagina de obra--

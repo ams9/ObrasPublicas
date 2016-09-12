@@ -2,20 +2,26 @@ package support
 
 import geb.Browser
 import geb.binding.BindingUpdater
+import obraspublicas.Obra
+import obraspublicas.Politico
 import org.codehaus.groovy.grails.test.support.GrailsTestRequestEnvironmentInterceptor
 
-this.metaClass.mixin(cucumber.api.groovy.Hooks)
+import static cucumber.api.groovy.Hooks.*
 
-Before() {
+Before () {
     bindingUpdater = new BindingUpdater(binding, new Browser())
     bindingUpdater.initialize()
-
-    scenarioInterceptor = new GrailsTestRequestEnvironmentInterceptor(appCtx)
-    scenarioInterceptor.init()
+    scenarioInterceptor = new GrailsTestRequestEnvironmentInterceptor (appCtx)
+    scenarioInterceptor.init ()
 }
 
-After() {
-    scenarioInterceptor.destroy()
-
-    bindingUpdater.remove()
+After () {
+    Obra.list().each { obra ->
+        obra.delete(flush:true)
+    }
+    Politico.list().each { politico ->
+        politico.delete(flush: true)
+    }
+    scenarioInterceptor.destroy ()
+    bindingUpdater.remove ()
 }
