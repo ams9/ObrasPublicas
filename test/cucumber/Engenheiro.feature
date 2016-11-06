@@ -11,7 +11,7 @@ Feature: Engenheiros
 
   Scenario: Adicionar um engenheiro existente
     Given que o sistema tem um engenheiro de CPF "98765432109" 
-    When eu tentar cadastrar um engenheiro de cpf "98765432109"
+    When eu tentar cadastrar um engenheiro com cpf "98765432109"
     Then o sistema nao ira cadastrar o engenheiro de CPF "98765432109"
 
   #Gui

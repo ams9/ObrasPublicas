@@ -1,5 +1,5 @@
 Testsuite: Obra
-Tests run: 14, Failures: 0, Errors: 1, Time elapsed: 6,814 sec
+Tests run: 14, Failures: 0, Errors: 1, Time elapsed: 3,41 sec
 ------------- Standard Output ---------------
 Feature: Obra
   As a usuario do sistema
@@ -10,92 +10,92 @@ Feature: Obra
 --Output from Buscar percentual de obras atrasadas--
   #CONTROLLER
   Scenario: Adicionar obra nao existente                            # Obra.feature:7
-    Given que o sistema nao tem uma obra chamada "Praca do arsenal" # ObraSteps.groovy:18
-    When eu tentar cadastrar uma obra com o nome "Praca do arsenal" # ObraSteps.groovy:25
-    Then o sistema ira cadastrar a obra de nome "Praca do arsenal"  # ObraSteps.groovy:30
+    Given que o sistema nao tem uma obra chamada "Praca do arsenal" # ObraSteps.groovy:21
+    When eu tentar cadastrar uma obra com o nome "Praca do arsenal" # ObraSteps.groovy:28
+    Then o sistema ira cadastrar a obra de nome "Praca do arsenal"  # ObraSteps.groovy:33
 
 --Output from Buscar percentual de obras com orcamento estourado--
   Scenario: Buscar percentual de obras atrasadas        # Obra.feature:12
-    Given que o sistema tem uma lista de "4" Obras      # ObraSteps.groovy:64
-    And o sistema tem "3" obra atrasada                 # ObraSteps.groovy:70
-    Then o percentual de atrasos sera de "75" por cento # ObraSteps.groovy:76
+    Given que o sistema tem uma lista de "4" Obras      # ObraSteps.groovy:67
+    And o sistema tem "3" obra atrasada                 # ObraSteps.groovy:73
+    Then o percentual de atrasos sera de "75" por cento # ObraSteps.groovy:79
 
 --Output from Adicionar obra existente--
   Scenario: Buscar percentual de obras com orcamento estourado         # Obra.feature:17
-    Given que o sistema tem uma lista de "4" Obras com seus orcamentos # ObraSteps.groovy:87
-    And o sistema tem "3" obra com orcamento estourado                 # ObraSteps.groovy:93
-    Then o percentual de orcamento estourado sera de "75" por cento    # ObraSteps.groovy:99
+    Given que o sistema tem uma lista de "4" Obras com seus orcamentos # ObraSteps.groovy:90
+    And o sistema tem "3" obra com orcamento estourado                 # ObraSteps.groovy:96
+    Then o percentual de orcamento estourado sera de "75" por cento    # ObraSteps.groovy:102
 
 --Output from Atualizar obra--
   Scenario: Adicionar obra existente                                   # Obra.feature:22
-    Given que o sistema tem uma obra chamada "Praca do arsenal"        # ObraSteps.groovy:44
-    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"    # ObraSteps.groovy:25
-    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal" # ObraSteps.groovy:51
+    Given que o sistema tem uma obra chamada "Praca do arsenal"        # ObraSteps.groovy:47
+    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"    # ObraSteps.groovy:28
+    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal" # ObraSteps.groovy:54
 
 --Output from Remover obra existente--
   Scenario: Atualizar obra                                                  # Obra.feature:27
-    Given que o sistema tem uma obra chamada "Praca do arsenal"             # ObraSteps.groovy:44
-    When eu tentar atualizar os dados da obra com o nome "Praca do arsenal" # ObraSteps.groovy:139
-    Then o sistema atualiza a obra com o nome "Praca do arsenal"            # ObraSteps.groovy:143
+    Given que o sistema tem uma obra chamada "Praca do arsenal"             # ObraSteps.groovy:47
+    When eu tentar atualizar os dados da obra com o nome "Praca do arsenal" # ObraSteps.groovy:142
+    Then o sistema atualiza a obra com o nome "Praca do arsenal"            # ObraSteps.groovy:146
 
 --Output from Verificar status andamento obra--
   Scenario: Remover obra existente                                # Obra.feature:32
-    Given que o sistema tem uma obra chamada "Praca do arsenal"   # ObraSteps.groovy:44
-    When eu tentar remover a obra com o nome "Praca do arsenal"   # ObraSteps.groovy:268
-    Then o sistema ira remover a obra com nome "Praca do arsenal" # ObraSteps.groovy:273
+    Given que o sistema tem uma obra chamada "Praca do arsenal"   # ObraSteps.groovy:47
+    When eu tentar remover a obra com o nome "Praca do arsenal"   # ObraSteps.groovy:271
+    Then o sistema ira remover a obra com nome "Praca do arsenal" # ObraSteps.groovy:276
 
 --Output from Adicionar obra com data de termino anterior a data de início--
   Scenario: Verificar status andamento obra                                                                   # Obra.feature:37
-    Given que o sistema tem uma obra chamada "Praca do arsenal" que esta atrasada mas esta com status "emDia" # ObraSteps.groovy:285
-    When eu tentar verificar o status da obra com o nome "Praca do arsenal"                                   # ObraSteps.groovy:292
-    Then o sistema ira atualizar obra com nome "Praca do arsenal" para "atrasada"                             # ObraSteps.groovy:297
+    Given que o sistema tem uma obra chamada "Praca do arsenal" que esta atrasada mas esta com status "emDia" # ObraSteps.groovy:288
+    When eu tentar verificar o status da obra com o nome "Praca do arsenal"                                   # ObraSteps.groovy:295
+    Then o sistema ira atualizar obra com nome "Praca do arsenal" para "atrasada"                             # ObraSteps.groovy:300
 
 --Output from Adicionar obra com data de termino anterior a data corrente--
   Scenario: Adicionar obra com data de termino anterior a data de início         # Obra.feature:42
-    Given que o sistema nao tem uma obra chamada "Praca do arsenal"              # ObraSteps.groovy:18
-    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"              # ObraSteps.groovy:25
-    And insiro a data inicial "12 October 2017" e a data final "12 October 2013" # ObraSteps.groovy:157
-    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal"           # ObraSteps.groovy:51
+    Given que o sistema nao tem uma obra chamada "Praca do arsenal"              # ObraSteps.groovy:21
+    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"              # ObraSteps.groovy:28
+    And insiro a data inicial "12 October 2017" e a data final "12 October 2013" # ObraSteps.groovy:160
+    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal"           # ObraSteps.groovy:54
 
 --Output from Atualizar nome de obra com nome já existente--
   Scenario: Adicionar obra com data de termino anterior a data corrente # Obra.feature:48
-    Given que o sistema nao tem uma obra chamada "Praca do arsenal"     # ObraSteps.groovy:18
-    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"     # ObraSteps.groovy:25
-    And insiro a data final "12 October 2013"                           # ObraSteps.groovy:169
-    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal"  # ObraSteps.groovy:51
+    Given que o sistema nao tem uma obra chamada "Praca do arsenal"     # ObraSteps.groovy:21
+    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"     # ObraSteps.groovy:28
+    And insiro a data final "12 October 2013"                           # ObraSteps.groovy:172
+    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal"  # ObraSteps.groovy:54
 
 --Output from Adicionar obra de um politico inexistente--
   Scenario: Atualizar nome de obra com nome já existente                                   # Obra.feature:54
-    Given que o sistema tem uma obra chamada "Praca do arsenal"                            # ObraSteps.groovy:44
-    And tem uma obra com o nome "Ilha do Retiro"                                           # ObraSteps.groovy:182
-    When eu tentar atualizar o nome da obra "Praca do arsenal" com o nome "Ilha do Retiro" # ObraSteps.groovy:187
-    Then o sistema não atualiza a obra com o novo nome "Ilha do Retiro"                    # ObraSteps.groovy:192
+    Given que o sistema tem uma obra chamada "Praca do arsenal"                            # ObraSteps.groovy:47
+    And tem uma obra com o nome "Ilha do Retiro"                                           # ObraSteps.groovy:185
+    When eu tentar atualizar o nome da obra "Praca do arsenal" com o nome "Ilha do Retiro" # ObraSteps.groovy:190
+    Then o sistema não atualiza a obra com o novo nome "Ilha do Retiro"                    # ObraSteps.groovy:195
 
 --Output from Devolver a taxa de obras atrasadas de um determinado político--
   Scenario: Adicionar obra de um politico inexistente                  # Obra.feature:60
-    Given que o sistema nao tem uma obra chamada "Praca do arsenal"    # ObraSteps.groovy:18
-    And não existe um politico com o cpf "11122233344"                 # ObraSteps.groovy:205
-    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"    # ObraSteps.groovy:25
-    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal" # ObraSteps.groovy:51
+    Given que o sistema nao tem uma obra chamada "Praca do arsenal"    # ObraSteps.groovy:21
+    And não existe um politico com o cpf "11122233344"                 # ObraSteps.groovy:208
+    When eu tentar cadastrar uma obra com o nome "Praca do arsenal"    # ObraSteps.groovy:28
+    Then o sistema nao ira cadastrar a obra de nome "Praca do arsenal" # ObraSteps.groovy:54
 
 --Output from Devolver a taxa de obras com orçamentos estourados de um determinado político--
   Scenario: Devolver a taxa de obras atrasadas de um determinado político                            # Obra.feature:66
-    Given que o sistema tem um politico com o cpf "98765432109"                                      # ObraSteps.groovy:219
-    And o sistema tem "2" obras associada ao politico com o cpf "98765432109"                        # ObraSteps.groovy:225
-    And o sistema tem "1" obra atrasada associada ao politico com o cpf "98765432109"                # ObraSteps.groovy:230
-    Then o percentual de obras atrasadas para o politico com o cpf "98765432109" é de "50" por cento # ObraSteps.groovy:235
+    Given que o sistema tem um politico com o cpf "98765432109"                                      # ObraSteps.groovy:222
+    And o sistema tem "2" obras associada ao politico com o cpf "98765432109"                        # ObraSteps.groovy:228
+    And o sistema tem "1" obra atrasada associada ao politico com o cpf "98765432109"                # ObraSteps.groovy:233
+    Then o percentual de obras atrasadas para o politico com o cpf "98765432109" é de "50" por cento # ObraSteps.groovy:238
 
 --Output from Visualizar obra--
   Scenario: Devolver a taxa de obras com orçamentos estourados de um determinado político                          # Obra.feature:72
-    Given que o sistema tem um politico com o cpf "98765432109"                                                    # ObraSteps.groovy:219
-    And o sistema tem "2" obras associada ao politico com o cpf "98765432109"                                      # ObraSteps.groovy:225
-    And o sistema tem "1" obra com orçamento estourado associada ao politico com o cpf "98765432109"               # ObraSteps.groovy:248
-    Then o percentual de obras com orcamento estourado para o politico com o cpf "98765432109" é de "50" por cento # ObraSteps.groovy:253
+    Given que o sistema tem um politico com o cpf "98765432109"                                                    # ObraSteps.groovy:222
+    And o sistema tem "2" obras associada ao politico com o cpf "98765432109"                                      # ObraSteps.groovy:228
+    And o sistema tem "1" obra com orçamento estourado associada ao politico com o cpf "98765432109"               # ObraSteps.groovy:251
+    Then o percentual de obras com orcamento estourado para o politico com o cpf "98765432109" é de "50" por cento # ObraSteps.groovy:256
 
   #GUI
   Scenario: Visualizar obra                                                                            # Obra.feature:80
-    Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal" # ObraSteps.groovy:112
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14781742713061314453061$_run_closure1@31b86805'
+    Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal" # ObraSteps.groovy:115
+      geb.driver.DriverCreationException: failed to create driver from callback 'script14784428284801314453061$_run_closure1@2330b432'
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -113,7 +113,7 @@ Feature: Obra
       	at geb.Browser$to$1.callCurrent(Unknown Source)
       	at geb.Browser.to(Browser.groovy:412)
       	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-      	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:115)
+      	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:118)
       	at ✽.Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal"(Obra.feature:81)
       Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Preto\Desktop\ObrasPublicas\chromedrivers\chromedrivermac
       	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
@@ -121,8 +121,8 @@ Feature: Obra
       	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
       	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
       	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
-      	at script14781742713061314453061$_run_closure1.doCall(script14781742713061314453061.groovy:8)
-      	at script14781742713061314453061$_run_closure1.doCall(script14781742713061314453061.groovy)
+      	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy:8)
+      	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy)
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -140,7 +140,7 @@ Feature: Obra
       	at geb.Browser$to$1.callCurrent(Unknown Source)
       	at geb.Browser.to(Browser.groovy:412)
       	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-      	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:115)
+      	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:118)
       	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
       	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
       	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
@@ -188,8 +188,8 @@ Feature: Obra
       	at gant.Gant.executeTargets(Gant.groovy:591)
       	at gant.Gant.executeTargets(Gant.groovy:590)
 
-    When o usuario seleciona a obra "Praca do arsenal"                                                 # ObraSteps.groovy:119
-    Then o sistema exibe os detalhes da obra "Praca do arsenal"                                        # ObraSteps.groovy:126
+    When o usuario seleciona a obra "Praca do arsenal"                                                 # ObraSteps.groovy:122
+    Then o sistema exibe os detalhes da obra "Praca do arsenal"                                        # ObraSteps.groovy:129
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
 
@@ -208,23 +208,23 @@ Feature: Obra
 --Output from Devolver a taxa de obras com orçamentos estourados de um determinado político--
 --Output from Visualizar obra--------------- ---------------- ---------------
 
-Testcase: Adicionar obra nao existente took 2,079 sec
-Testcase: Buscar percentual de obras atrasadas took 0,377 sec
-Testcase: Buscar percentual de obras com orcamento estourado took 0,239 sec
-Testcase: Adicionar obra existente took 0,283 sec
-Testcase: Atualizar obra took 0,202 sec
-Testcase: Remover obra existente took 0,271 sec
-Testcase: Verificar status andamento obra took 0,226 sec
-Testcase: Adicionar obra com data de termino anterior a data de início took 0,248 sec
-Testcase: Adicionar obra com data de termino anterior a data corrente took 0,301 sec
-Testcase: Atualizar nome de obra com nome já existente took 0,32 sec
-Testcase: Adicionar obra de um politico inexistente took 0,239 sec
-Testcase: Devolver a taxa de obras atrasadas de um determinado político took 0,277 sec
-Testcase: Devolver a taxa de obras com orçamentos estourados de um determinado político took 0,263 sec
-Testcase: Visualizar obra took 0,6 sec
+Testcase: Adicionar obra nao existente took 0,887 sec
+Testcase: Buscar percentual de obras atrasadas took 0,123 sec
+Testcase: Buscar percentual de obras com orcamento estourado took 0,167 sec
+Testcase: Adicionar obra existente took 0,244 sec
+Testcase: Atualizar obra took 0,157 sec
+Testcase: Remover obra existente took 0,237 sec
+Testcase: Verificar status andamento obra took 0,22 sec
+Testcase: Adicionar obra com data de termino anterior a data de início took 0,197 sec
+Testcase: Adicionar obra com data de termino anterior a data corrente took 0,202 sec
+Testcase: Atualizar nome de obra com nome já existente took 0,149 sec
+Testcase: Adicionar obra de um politico inexistente took 0,149 sec
+Testcase: Devolver a taxa de obras atrasadas de um determinado político took 0,14 sec
+Testcase: Devolver a taxa de obras com orçamentos estourados de um determinado político took 0,132 sec
+Testcase: Visualizar obra took 0,201 sec
 	Caused an ERROR
-failed to create driver from callback 'script14781742713061314453061$_run_closure1@31b86805'
-geb.driver.DriverCreationException: failed to create driver from callback 'script14781742713061314453061$_run_closure1@31b86805'
+failed to create driver from callback 'script14784428284801314453061$_run_closure1@2330b432'
+geb.driver.DriverCreationException: failed to create driver from callback 'script14784428284801314453061$_run_closure1@2330b432'
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -238,7 +238,7 @@ geb.driver.DriverCreationException: failed to create driver from callback 'scrip
 	at geb.Browser.to(Browser.groovy:434)
 	at geb.Browser.to(Browser.groovy:412)
 	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:115)
+	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:118)
 	at ✽.Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal"(Obra.feature:81)
 Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Preto\Desktop\ObrasPublicas\chromedrivers\chromedrivermac
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
@@ -246,7 +246,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
-	at script14781742713061314453061$_run_closure1.doCall(script14781742713061314453061.groovy:8)
+	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy:8)
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -260,7 +260,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 	at geb.Browser.to(Browser.groovy:434)
 	at geb.Browser.to(Browser.groovy:412)
 	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:115)
+	at ObraSteps$_run_closure12.doCall(ObraSteps.groovy:118)
 	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
 	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
 	at cucumber.runtime.Timeout.timeout(Timeout.java:13)

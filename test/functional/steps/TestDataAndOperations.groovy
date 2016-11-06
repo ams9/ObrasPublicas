@@ -77,6 +77,15 @@ class TestDataAndOperations {
              cpf      : "98765432109",
              email    : "robsobra@obra.com"]
     ]
+    static engenheiros=[
+            [titulacao: "graduado",
+            foto:"youtube.com",
+            descricao: "engenheiro muito bom",
+            nome: "anderson doidão",
+            cpf:"1234567812",
+            email: "anderson@engenheiro.com"
+            ]
+    ]
 
     static politicoObra = [
             [nomeObra: "Ilha do Retiro",
@@ -118,6 +127,11 @@ class TestDataAndOperations {
     static public def findPoliticoByCPF(String politicoCPF) {
         politicos.find { politico ->
             politico.cpf == politicoCPF
+        }
+    }
+    static public def findEngenheiroByCPF(String engenheiroCPF){
+        engenheiros.find{ engenheiro ->
+            engenheiro.cpf == engenheiroCPF
         }
     }
 
@@ -167,6 +181,14 @@ class TestDataAndOperations {
         def cont = new PoliticoController()
         cont.params << TestDataAndOperations.findPoliticoByCPF(cpf)
         Politico politico = TestDataAndOperations.findPoliticoByCPF(cpf)
+        cont.create()
+        cont.save()
+        cont.response.reset()
+    }
+    static public void createEngenheiro(String cpf){
+        def cont = new EngenheiroController()
+        cont.params << TestDataAndOperations.findEngenheiroByCPF(cpf)
+        Engenheiro engenheiro = TestDataAndOperations.findEngenheiroByCPF(cpf)
         cont.create()
         cont.save()
         cont.response.reset()
@@ -270,6 +292,18 @@ class TestDataAndOperations {
             }
         }
         return compatible
+    }
+    static public boolean engenheiroCompatibleTo(engenheiro, cpf){
+        def testEngenheiro = findEngenheiroByCPF(cpf)
+        def compatible = false
+        if (testEngenheiro == null && engenheiro == null){
+            compatible= true
+        } else if (testEngenheiro != null && engenheiro!= null){
+            compatible = true
+            testEngenheiro.each { key, data->
+                compatible = compatible && (engenheiro."$key" == data)
+            }
+        }
     }
 
     static public boolean enderecoCompatibleTo(endereco, CEP, numero) {
