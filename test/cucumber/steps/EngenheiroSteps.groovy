@@ -21,11 +21,10 @@ Given (~'^que o sistema nao tem um engenheiro com CPF "([^"]*)"$') {
         Engenheiro engenheiro = Engenheiro.findByCpf(cpf)
         assert engenheiro == null
 }
-def when = When (~'^eu tentar cadastrar um engenheiro com CPF "([^"]*)"$'){
+When (~'^eu tentar cadastrar um engenheiro com CPF "([^"]*)"$'){
     String cpf ->
         TestDataAndOperations.createEngenheiro(cpf)
 }
-when
 Then (~'^o sistema ira cadastrar o engenheiro de CPF "([^"]*)"$'){
     String cpf ->
         Engenheiro engenheiro = Engenheiro.findByCpf(cpf)

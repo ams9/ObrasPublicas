@@ -90,6 +90,7 @@
 				<ul>
 					<li class="controller"><a href="politico/create">Inserir de Político</a></li>
 					<li class="controller"><a href="obra/create">Inserir de Obra</a></li>
+					<li class="controller"><a href="engenheiro/create"> Inserir Engenheiro</a> </li>
 					<li class="controller"><a href="politico/index">Lista de Políticos</a></li>
 					<li class="controller"><a href="obra/index">Lista de Obras</a></li>
 					<li class="controller"><a href="obra/relatorios">Relatórios</a></li>

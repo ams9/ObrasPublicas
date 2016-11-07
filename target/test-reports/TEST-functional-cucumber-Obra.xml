@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="DESKTOP-1N37P4B" name="Obra" tests="14" time="3.41" timestamp="2016-11-06T14:33:45">
+<testsuite errors="1" failures="0" hostname="DESKTOP-1N37P4B" name="Obra" tests="14" time="3.728" timestamp="2016-11-07T12:30:00">
   <properties />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra nao existente" time="0.887" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Buscar percentual de obras atrasadas" time="0.123" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Buscar percentual de obras com orcamento estourado" time="0.167" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra existente" time="0.244" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Atualizar obra" time="0.157" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remover obra existente" time="0.237" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Verificar status andamento obra" time="0.22" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra nao existente" time="1.28" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Buscar percentual de obras atrasadas" time="0.154" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Buscar percentual de obras com orcamento estourado" time="0.11" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra existente" time="0.211" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Atualizar obra" time="0.159" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remover obra existente" time="0.262" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Verificar status andamento obra" time="0.203" />
   <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra com data de termino anterior a data de início" time="0.197" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra com data de termino anterior a data corrente" time="0.202" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Atualizar nome de obra com nome já existente" time="0.149" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra de um politico inexistente" time="0.149" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Devolver a taxa de obras atrasadas de um determinado político" time="0.14" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Devolver a taxa de obras com orçamentos estourados de um determinado político" time="0.132" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Visualizar obra" time="0.207">
-    <error message="failed to create driver from callback &apos;script14784428284801314453061$_run_closure1@2330b432&apos;" type="geb.driver.DriverCreationException">geb.driver.DriverCreationException: failed to create driver from callback &apos;script14784428284801314453061$_run_closure1@2330b432&apos;
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra com data de termino anterior a data corrente" time="0.17" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Atualizar nome de obra com nome já existente" time="0.141" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Adicionar obra de um politico inexistente" time="0.16" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Devolver a taxa de obras atrasadas de um determinado político" time="0.116" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Devolver a taxa de obras com orçamentos estourados de um determinado político" time="0.109" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Visualizar obra" time="0.323">
+    <error message="failed to create driver from callback &apos;script14785218037051314453061$_run_closure1@f62758d&apos;" type="geb.driver.DriverCreationException">geb.driver.DriverCreationException: failed to create driver from callback &apos;script14785218037051314453061$_run_closure1@f62758d&apos;
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -37,7 +37,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy:8)
+	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy:8)
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -164,7 +164,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
   #GUI
   Scenario: Visualizar obra                                                                            # Obra.feature:80
     Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal" # ObraSteps.groovy:115
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14784428284801314453061$_run_closure1@2330b432'
+      geb.driver.DriverCreationException: failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -190,8 +190,8 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
       	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
       	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
       	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
-      	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy:8)
-      	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy)
+      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy:8)
+      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy)
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)

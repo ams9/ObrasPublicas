@@ -67,7 +67,7 @@
 <p>
 <span class="icon error"></span><b class="testname message error">Adicionar engenheiro nao existente</b>
 </p>
-<p class="summary">Executed in 0.569 seconds.</p>
+<p class="summary">Executed in 0.821 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -94,7 +94,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon error"></span><b class="testname message error">Adicionar um engenheiro existente</b>
 </p>
-<p class="summary">Executed in 0.216 seconds.</p>
+<p class="summary">Executed in 0.157 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -109,7 +109,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 	[interface java.util.Map]
 	[interface java.util.Map$Entry]
 	at steps.TestDataAndOperations.createEngenheiro(TestDataAndOperations.groovy:190)
-	at EngenheiroSteps$_run_closure4.doCall(EngenheiroSteps.groovy:46)
+	at EngenheiroSteps$_run_closure4.doCall(EngenheiroSteps.groovy:45)
 	at ✽.Given que o sistema tem um engenheiro de CPF "98765432109"(Engenheiro.feature:13)
 </pre>
 </div>
@@ -143,7 +143,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon failure"></span><b class="testname message failure">Novo engenheiro</b>
 </p>
-<p class="summary">Executed in 0.21 seconds.</p>
+<p class="summary">Executed in 0.168 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -286,7 +286,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon failure"></span><b class="testname message failure">Editar informa&ccedil;&otilde;es de um engenheiro</b>
 </p>
-<p class="summary">Executed in 0.019 seconds.</p>
+<p class="summary">Executed in 0.017 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -403,22 +403,22 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
       	at EngenheiroSteps$_run_closure2.doCall(EngenheiroSteps.groovy:26)
       	at ✽.When eu tentar cadastrar um engenheiro com CPF "01234567891"(Engenheiro.feature:9)
 
-    Then o sistema ira cadastrar o engenheiro de CPF "01234567891"  # EngenheiroSteps.groovy:29
+    Then o sistema ira cadastrar o engenheiro de CPF "01234567891"  # EngenheiroSteps.groovy:28
 
 --Output from Novo engenheiro--
   Scenario: Adicionar um engenheiro existente                          # Engenheiro.feature:12
-    Given que o sistema tem um engenheiro de CPF "98765432109"         # EngenheiroSteps.groovy:44
+    Given que o sistema tem um engenheiro de CPF "98765432109"         # EngenheiroSteps.groovy:43
       groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method org.codehaus.groovy.grails.web.servlet.mvc.GrailsParameterMap#leftShift.
       Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
       	[interface java.util.Map]
       	[interface java.util.Map$Entry]
       	at steps.TestDataAndOperations.createEngenheiro(TestDataAndOperations.groovy:190)
       	at steps.TestDataAndOperations$createEngenheiro.call(Unknown Source)
-      	at EngenheiroSteps$_run_closure4.doCall(EngenheiroSteps.groovy:46)
+      	at EngenheiroSteps$_run_closure4.doCall(EngenheiroSteps.groovy:45)
       	at ✽.Given que o sistema tem um engenheiro de CPF "98765432109"(Engenheiro.feature:13)
 
     When eu tentar cadastrar um engenheiro com cpf "98765432109"
-    Then o sistema nao ira cadastrar o engenheiro de CPF "98765432109" # EngenheiroSteps.groovy:51
+    Then o sistema nao ira cadastrar o engenheiro de CPF "98765432109" # EngenheiroSteps.groovy:50
 
 --Output from Editar informa&ccedil;&otilde;es de um engenheiro--
   #Gui
@@ -466,7 +466,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar obra nao existente</b>
 </p>
-<p class="summary">Executed in 0.887 seconds.</p>
+<p class="summary">Executed in 1.28 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -476,7 +476,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Buscar percentual de obras atrasadas</b>
 </p>
-<p class="summary">Executed in 0.123 seconds.</p>
+<p class="summary">Executed in 0.154 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -486,7 +486,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Buscar percentual de obras com orcamento estourado</b>
 </p>
-<p class="summary">Executed in 0.167 seconds.</p>
+<p class="summary">Executed in 0.11 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -496,7 +496,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar obra existente</b>
 </p>
-<p class="summary">Executed in 0.244 seconds.</p>
+<p class="summary">Executed in 0.211 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -506,7 +506,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Atualizar obra</b>
 </p>
-<p class="summary">Executed in 0.157 seconds.</p>
+<p class="summary">Executed in 0.159 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -516,7 +516,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Remover obra existente</b>
 </p>
-<p class="summary">Executed in 0.237 seconds.</p>
+<p class="summary">Executed in 0.262 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -526,7 +526,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Verificar status andamento obra</b>
 </p>
-<p class="summary">Executed in 0.22 seconds.</p>
+<p class="summary">Executed in 0.203 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -546,7 +546,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar obra com data de termino anterior a data corrente</b>
 </p>
-<p class="summary">Executed in 0.202 seconds.</p>
+<p class="summary">Executed in 0.17 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -556,7 +556,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Atualizar nome de obra com nome j&aacute; existente</b>
 </p>
-<p class="summary">Executed in 0.149 seconds.</p>
+<p class="summary">Executed in 0.141 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -566,7 +566,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar obra de um politico inexistente</b>
 </p>
-<p class="summary">Executed in 0.149 seconds.</p>
+<p class="summary">Executed in 0.16 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -576,7 +576,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Devolver a taxa de obras atrasadas de um determinado pol&iacute;tico</b>
 </p>
-<p class="summary">Executed in 0.14 seconds.</p>
+<p class="summary">Executed in 0.116 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -586,7 +586,7 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon success"></span><b class="testname message success">Devolver a taxa de obras com or&ccedil;amentos estourados de um determinado pol&iacute;tico</b>
 </p>
-<p class="summary">Executed in 0.132 seconds.</p>
+<p class="summary">Executed in 0.109 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -596,14 +596,14 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 <p>
 <span class="icon error"></span><b class="testname message error">Visualizar obra</b>
 </p>
-<p class="summary">Executed in 0.207 seconds.</p>
+<p class="summary">Executed in 0.323 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
 <p>
-<b class="message">failed to create driver from callback 'script14784428284801314453061$_run_closure1@2330b432'</b>
+<b class="message">failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'</b>
 </p>
-<pre>geb.driver.DriverCreationException: failed to create driver from callback 'script14784428284801314453061$_run_closure1@2330b432'
+<pre>geb.driver.DriverCreationException: failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -625,7 +625,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy:8)
+	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy:8)
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -758,7 +758,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
   #GUI
   Scenario: Visualizar obra                                                                            # Obra.feature:80
     Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal" # ObraSteps.groovy:115
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14784428284801314453061$_run_closure1@2330b432'
+      geb.driver.DriverCreationException: failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -784,8 +784,8 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
       	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
       	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
       	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-      	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy:8)
-      	at script14784428284801314453061$_run_closure1.doCall(script14784428284801314453061.groovy)
+      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy:8)
+      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy)
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -894,7 +894,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar politico nao existente</b>
 </p>
-<p class="summary">Executed in 0.14 seconds.</p>
+<p class="summary">Executed in 0.181 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -904,7 +904,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar politico existente</b>
 </p>
-<p class="summary">Executed in 0.132 seconds.</p>
+<p class="summary">Executed in 0.149 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -914,7 +914,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 <p>
 <span class="icon success"></span><b class="testname message success">Atualizar o id de um politico</b>
 </p>
-<p class="summary">Executed in 0.129 seconds.</p>
+<p class="summary">Executed in 0.178 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -924,7 +924,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 <p>
 <span class="icon success"></span><b class="testname message success">Remover pol&iacute;tico existente</b>
 </p>
-<p class="summary">Executed in 0.186 seconds.</p>
+<p class="summary">Executed in 0.24 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -934,14 +934,14 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 <p>
 <span class="icon error"></span><b class="testname message error">Visualizar pol&iacute;tico</b>
 </p>
-<p class="summary">Executed in 0.057 seconds.</p>
+<p class="summary">Executed in 0.07 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
 <p>
-<b class="message">failed to create driver from callback 'script14784428294451314453061$_run_closure1@4089f35b'</b>
+<b class="message">failed to create driver from callback 'script14785218048881314453061$_run_closure1@162b59a8'</b>
 </p>
-<pre>geb.driver.DriverCreationException: failed to create driver from callback 'script14784428294451314453061$_run_closure1@4089f35b'
+<pre>geb.driver.DriverCreationException: failed to create driver from callback 'script14785218048881314453061$_run_closure1@162b59a8'
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -963,7 +963,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-	at script14784428294451314453061$_run_closure1.doCall(script14784428294451314453061.groovy:8)
+	at script14785218048881314453061$_run_closure1.doCall(script14785218048881314453061.groovy:8)
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -1035,7 +1035,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
   #GUI
   Scenario: Visualizar pol&iacute;tico                                                                                    # Politico.feature:28
     Given que o usuario esta no menu de pol&iacute;tico e quer visualizar os detalhes do pol&iacute;tico com o cpf "98765432109" # PoliticoSteps.groovy:100
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14784428294451314453061$_run_closure1@4089f35b'
+      geb.driver.DriverCreationException: failed to create driver from callback 'script14785218048881314453061$_run_closure1@162b59a8'
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -1061,8 +1061,8 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
       	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
       	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
       	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-      	at script14784428294451314453061$_run_closure1.doCall(script14784428294451314453061.groovy:8)
-      	at script14784428294451314453061$_run_closure1.doCall(script14784428294451314453061.groovy)
+      	at script14785218048881314453061$_run_closure1.doCall(script14785218048881314453061.groovy:8)
+      	at script14785218048881314453061$_run_closure1.doCall(script14785218048881314453061.groovy)
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
