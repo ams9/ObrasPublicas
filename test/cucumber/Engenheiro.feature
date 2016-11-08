@@ -5,14 +5,13 @@ Feature: Engenheiros
 
   #CONTROLLER
    Scenario: Adicionar engenheiro nao existente
-    Given que o sistema nao tem um engenheiro com CPF "01234567891" 
-      When eu tentar cadastrar um engenheiro com CPF "01234567891"
-    Then o sistema ira cadastrar o engenheiro de CPF "01234567891"
+    Given que o sistema nao tem um engenheiro com CPF "1234567812"
+    When eu tentar cadastrar um engenheiro com CPF "1234567812"
+    Then o sistema ira cadastrar o engenheiro de CPF "1234567812"
 
   Scenario: Adicionar um engenheiro existente
-    Given que o sistema tem um engenheiro de CPF "98765432109" 
-    When eu tentar cadastrar um engenheiro com cpf "98765432109"
-    Then o sistema nao ira cadastrar o engenheiro de CPF "98765432109"
+    Given que o sistema tem um engenheiro de CPF "1234567812"
+    Then o sistema nao ira cadastrar o engenheiro de CPF "1234567812"
 
   #Gui
   Scenario: Novo engenheiro

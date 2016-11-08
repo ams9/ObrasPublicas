@@ -1,5 +1,5 @@
 Testsuite: Obra
-Tests run: 14, Failures: 0, Errors: 1, Time elapsed: 3,728 sec
+Tests run: 14, Failures: 0, Errors: 1, Time elapsed: 3,804 sec
 ------------- Standard Output ---------------
 Feature: Obra
   As a usuario do sistema
@@ -95,7 +95,7 @@ Feature: Obra
   #GUI
   Scenario: Visualizar obra                                                                            # Obra.feature:80
     Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal" # ObraSteps.groovy:115
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'
+      geb.driver.DriverCreationException: failed to create driver from callback 'script14785756140251314453061$_run_closure1@3784437c'
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -121,8 +121,8 @@ Feature: Obra
       	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
       	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
       	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
-      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy:8)
-      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy)
+      	at script14785756140251314453061$_run_closure1.doCall(script14785756140251314453061.groovy:8)
+      	at script14785756140251314453061$_run_closure1.doCall(script14785756140251314453061.groovy)
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -208,23 +208,23 @@ Feature: Obra
 --Output from Devolver a taxa de obras com orçamentos estourados de um determinado político--
 --Output from Visualizar obra--------------- ---------------- ---------------
 
-Testcase: Adicionar obra nao existente took 1,28 sec
-Testcase: Buscar percentual de obras atrasadas took 0,154 sec
-Testcase: Buscar percentual de obras com orcamento estourado took 0,11 sec
-Testcase: Adicionar obra existente took 0,212 sec
-Testcase: Atualizar obra took 0,159 sec
-Testcase: Remover obra existente took 0,262 sec
-Testcase: Verificar status andamento obra took 0,203 sec
-Testcase: Adicionar obra com data de termino anterior a data de início took 0,197 sec
-Testcase: Adicionar obra com data de termino anterior a data corrente took 0,17 sec
-Testcase: Atualizar nome de obra com nome já existente took 0,141 sec
-Testcase: Adicionar obra de um politico inexistente took 0,161 sec
-Testcase: Devolver a taxa de obras atrasadas de um determinado político took 0,116 sec
-Testcase: Devolver a taxa de obras com orçamentos estourados de um determinado político took 0,109 sec
-Testcase: Visualizar obra took 0,318 sec
+Testcase: Adicionar obra nao existente took 0,751 sec
+Testcase: Buscar percentual de obras atrasadas took 0,246 sec
+Testcase: Buscar percentual de obras com orcamento estourado took 0,21 sec
+Testcase: Adicionar obra existente took 0,329 sec
+Testcase: Atualizar obra took 0,274 sec
+Testcase: Remover obra existente took 0,308 sec
+Testcase: Verificar status andamento obra took 0,276 sec
+Testcase: Adicionar obra com data de termino anterior a data de início took 0,216 sec
+Testcase: Adicionar obra com data de termino anterior a data corrente took 0,171 sec
+Testcase: Atualizar nome de obra com nome já existente took 0,154 sec
+Testcase: Adicionar obra de um politico inexistente took 0,18 sec
+Testcase: Devolver a taxa de obras atrasadas de um determinado político took 0,152 sec
+Testcase: Devolver a taxa de obras com orçamentos estourados de um determinado político took 0,133 sec
+Testcase: Visualizar obra took 0,233 sec
 	Caused an ERROR
-failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'
-geb.driver.DriverCreationException: failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'
+failed to create driver from callback 'script14785756140251314453061$_run_closure1@3784437c'
+geb.driver.DriverCreationException: failed to create driver from callback 'script14785756140251314453061$_run_closure1@3784437c'
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
@@ -246,7 +246,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
-	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy:8)
+	at script14785756140251314453061$_run_closure1.doCall(script14785756140251314453061.groovy:8)
 	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
 	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
 	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)

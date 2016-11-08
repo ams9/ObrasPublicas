@@ -293,18 +293,7 @@ class TestDataAndOperations {
         }
         return compatible
     }
-    static public boolean engenheiroCompatibleTo(engenheiro, cpf){
-        def testEngenheiro = findEngenheiroByCPF(cpf)
-        def compatible = false
-        if (testEngenheiro == null && engenheiro == null){
-            compatible= true
-        } else if (testEngenheiro != null && engenheiro!= null){
-            compatible = true
-            testEngenheiro.each { key, data->
-                compatible = compatible && (engenheiro."$key" == data)
-            }
-        }
-    }
+    
 
     static public boolean enderecoCompatibleTo(endereco, CEP, numero) {
         def testEndereco = findEnderecoByCEPAndNumero(CEP, numero)

@@ -31,7 +31,7 @@ Feature: Políticos
   #GUI
   Scenario: Visualizar político                                                                                    # Politico.feature:28
     Given que o usuario esta no menu de político e quer visualizar os detalhes do político com o cpf "98765432109" # PoliticoSteps.groovy:100
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14785218048881314453061$_run_closure1@162b59a8'
+      geb.driver.DriverCreationException: failed to create driver from callback 'script14785756151041314453061$_run_closure1@3e44fca7'
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -57,8 +57,8 @@ Feature: Políticos
       	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
       	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
       	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
-      	at script14785218048881314453061$_run_closure1.doCall(script14785218048881314453061.groovy:8)
-      	at script14785218048881314453061$_run_closure1.doCall(script14785218048881314453061.groovy)
+      	at script14785756151041314453061$_run_closure1.doCall(script14785756151041314453061.groovy:8)
+      	at script14785756151041314453061$_run_closure1.doCall(script14785756151041314453061.groovy)
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)

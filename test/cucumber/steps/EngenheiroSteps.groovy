@@ -28,7 +28,7 @@ When (~'^eu tentar cadastrar um engenheiro com CPF "([^"]*)"$'){
 Then (~'^o sistema ira cadastrar o engenheiro de CPF "([^"]*)"$'){
     String cpf ->
         Engenheiro engenheiro = Engenheiro.findByCpf(cpf)
-        assert TestDataAndOperations.engenheiroCompatibleTo(engenheiro, cpf)
+        assert TestDataAndOperations.politicoCompatibleTo(engenheiro, cpf)
 }
 
 /**

@@ -92,7 +92,7 @@ Feature: Obra
   #GUI
   Scenario: Visualizar obra                                                                            # Obra.feature:80
     Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal" # ObraSteps.groovy:115
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14785218037051314453061$_run_closure1@f62758d'
+      geb.driver.DriverCreationException: failed to create driver from callback 'script14785756140251314453061$_run_closure1@3784437c'
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
@@ -118,8 +118,8 @@ Feature: Obra
       	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
       	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
       	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
-      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy:8)
-      	at script14785218037051314453061$_run_closure1.doCall(script14785218037051314453061.groovy)
+      	at script14785756140251314453061$_run_closure1.doCall(script14785756140251314453061.groovy:8)
+      	at script14785756140251314453061$_run_closure1.doCall(script14785756140251314453061.groovy)
       	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
       	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)

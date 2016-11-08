@@ -11,5 +11,6 @@ class Engenheiro extends Pessoa {
         obras blank: true
         foto blank: true
         obras null: true
+        titulacao null:false
     }
 }
