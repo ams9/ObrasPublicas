@@ -84,6 +84,13 @@ class TestDataAndOperations {
             nome: "anderson doidão",
             cpf:"1234567812",
             email: "anderson@engenheiro.com"
+            ],
+            [titulacao: "Mestrado",
+            foto:"youtube.com",
+            descricao: "engenheiro muito bom",
+            nome: "Emanuel Safadão",
+            cpf:"12121212123",
+            email: "emanuel@engenheiro.com"
             ]
     ]
 
@@ -293,7 +300,7 @@ class TestDataAndOperations {
         }
         return compatible
     }
-    
+
 
     static public boolean enderecoCompatibleTo(endereco, CEP, numero) {
         def testEndereco = findEnderecoByCEPAndNumero(CEP, numero)
